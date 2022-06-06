@@ -1,0 +1,200 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CABECERA */
+
+.main-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__divlogo{
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+.main-header__divlogo img{
+    max-width: 80%;
+	height: auto;
+    margin-left: 10px;
+}
+
+.main-header__divlogo a{
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.main-header__divlogo-titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-header__divnav a{
+    padding-right: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FIN CABEZERA */
+
+
+/* CAROUSEL */
+  /* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 670px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/** FIN DEL CAROUSEL **/
+
+/* TEXTO CENTRAL DEBAJO DEL SLIDER*/
+
+.container-textcentral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-left: 35px;
+    border-right: 35px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* SECCION DE 4 COL */
+
+.section-bott {
+    display: flex;
+    width: 100%;
+    margin-right: 35px;
+    margin-top: 30px;
+    border-right: 35px;
+    background-color: #A5E5FF;
+}
+
+.section-bott__row {
+    flex-flow: row wrap;
+    justify-content: center;
+    border-left: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 35px;
+}
+
+.section-bott__row-col {
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer p{
+    display: block;
+    background-color: #292929;
+    color: #a2a2a2;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+  
+/* Tamaño tablet horizontal (1024-768) */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .section-bott {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .section-bott__row-col {
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-header__divnav-nav{
+        flex-flow: column wrap;
+        
+    }
+
+ }
+
+/* Tamaño tablet (768-480) */
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    .section-bott {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .section-bott__row-col, .main-header, .main-header__divnav-nav a{
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        padding-right: 0px;
+        margin-right: 0px;
+        flex-flow: column wrap;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+   
+
+ }
